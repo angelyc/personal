@@ -1,0 +1,30 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.5.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.mario'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+
+    maven { url "http://rd-gitlab.mingdutech.com:8081/repository/maven-public/" }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+dependencies {
+    compile 'jcifs:jcifs:1.3.17'
+    compile "org.dom4j:dom4j:2.1.1"
+    compile "de.siegmar:fastcsv:1.0.3"
+    compile "com.google.code.gson:gson:2.3.1"
+    compile "org.projectlombok:lombok"
+}
