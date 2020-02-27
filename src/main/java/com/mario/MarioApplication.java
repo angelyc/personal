@@ -1,4 +1,4 @@
-package com.mario.test;
+package com.mario;
 
 
 import com.mario.test.fastcsv.FastCsv;
@@ -21,7 +21,7 @@ import java.util.logging.Level;
 
 import java.util.logging.Logger;
 @SpringBootApplication
-public class TestApplication {
+public class MarioApplication {
     public static final Logger logger = Logger.getLogger("SambaClient");
     private static NtlmPasswordAuthentication authentication;
     public static void main(String[] args) {
