@@ -43,9 +43,7 @@ public class InsertSort {
         System.out.println("第" + index + "次");
         String output = "";
         for (int i = 0; i < SIZE; i++) {
-            if (i == index) {
-                output += ", ";
-            }
+            if (i - 1 == index) output += ", ";
             output = output + " " + sorts[i];
 
         }
