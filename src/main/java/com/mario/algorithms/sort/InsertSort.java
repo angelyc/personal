@@ -66,7 +66,7 @@ public class InsertSort {
         System.out.println(output);
     }
     public static void main(String[] args) {
-        randoms();
+        Randoms.random(sorts, SIZE);
         out(0);
         //insertSort();
         insertSort2();

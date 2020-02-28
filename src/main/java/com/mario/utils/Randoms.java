@@ -27,4 +27,10 @@ public class Randoms {
         return ran3;
     }
 
+    public static void random(int[] a, int len) {
+        for (int i = 0; i < len; i++) {
+            Integer integer = random2();
+            a[i] = integer;
+        }
+    }
 }
