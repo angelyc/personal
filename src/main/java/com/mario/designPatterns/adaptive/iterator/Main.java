@@ -14,11 +14,5 @@ public class Main {
             Book book = it.next();
             System.out.println(book.getName());
         }
-        System.out.println("******no generic******");
-        MyIterator<Book> it2 = bookShelf.iterator();
-        while(it2.hasNext()) {
-            Book book = it2.next();
-            System.out.println(book.getName());
-        }
     }
 }
