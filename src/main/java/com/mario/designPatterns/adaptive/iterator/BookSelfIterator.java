@@ -1,9 +1,9 @@
 package com.mario.designPatterns.adaptive.iterator;
 
-public class BookSelfIterator implements MyIterator<Book> {
-    private BookShelf bookShelf;
+public class BookSelfIterator<T> implements MyIterator<T> {
+    private BookShelf<T> bookShelf;
     private int index;
-    BookSelfIterator(BookShelf bookShelf) {
+    BookSelfIterator(BookShelf<T> bookShelf) {
         this.bookShelf = bookShelf;
         this.index = 0;
     }
@@ -12,8 +12,8 @@ public class BookSelfIterator implements MyIterator<Book> {
         return index < bookShelf.getLength();
     }
 
-    public Book next() {
-        Book book = bookShelf.getBootAt(index);
+    public T next() {
+        T book = bookShelf.getBootAt(index);
         index++;
         return book;
     }

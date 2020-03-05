@@ -1,19 +1,22 @@
 package com.mario.designPatterns.adaptive.iterator;
 
-public class BookShelf implements Aggregate<Book> {
-    private Book[] books;
+import java.util.ArrayList;
+import java.util.List;
+
+public class BookShelf<T> implements Aggregate<T> {
+    private List<T> books;
     private int last = 0;
 
-    BookShelf(int maxSize) {
-        books = new Book[maxSize];
+    BookShelf() {
+        books = new ArrayList<>();
     }
 
-    Book getBootAt(int index) {
-        return books[index];
+    T getBootAt(int index) {
+        return books.get(index);
     }
 
-    void appendBook(Book book) {
-        books[last] = book;
+    void appendBook(T book) {
+        books.add(book);
         last++;
     }
 
@@ -21,7 +24,7 @@ public class BookShelf implements Aggregate<Book> {
         return last;
     }
 
-    public  MyIterator iterator() {
+    public  MyIterator<T> iterator() {
         return new BookSelfIterator(this);
     }
 }
