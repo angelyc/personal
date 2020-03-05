@@ -39,6 +39,20 @@ public class InsertSort {
         }
     }
 
+    private static void insertSort2() {
+        int length = sorts.length, temp;
+        for (int i = 1; i < length; i++) {
+            for(int j = i; j > 0; j--) {
+                if (sorts[j] < sorts[j - 1]) {
+                    temp = sorts[j];
+                    sorts[j] = sorts[j - 1];
+                    sorts[j - 1] = temp;
+                } else {
+                    break;
+                }
+            }
+        }
+    }
     private static void out(int index) {
         System.out.println("第" + index + "次");
         String output = "";
@@ -50,9 +64,10 @@ public class InsertSort {
         System.out.println(output);
     }
     public static void main(String[] args) {
-        randoms();
+        Randoms.random(sorts, SIZE);
         out(0);
-        insertSort();
+        //insertSort();
+        insertSort2();
         out(SIZE);
     }
 }
