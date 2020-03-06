@@ -5,6 +5,7 @@ public class Generic<E> {
      * class CLASS_NAME <泛型变量> {
      *     泛型变量一般用 E，K，V，T
      * }
+     * 泛型类的泛型，在创建类的对象时确定
      *     */
     private E e;
 
