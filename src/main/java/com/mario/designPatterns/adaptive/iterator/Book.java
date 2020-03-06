@@ -1,4 +1,4 @@
-package com.mario.designPatterns.iterator;
+package com.mario.designPatterns.adaptive.iterator;
 
 public class Book {
     private String name;

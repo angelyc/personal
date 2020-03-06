@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adapter.exercise;
+package com.mario.designPatterns.adaptive.adapter.exercise;
 
 import java.io.*;
 import java.util.Properties;

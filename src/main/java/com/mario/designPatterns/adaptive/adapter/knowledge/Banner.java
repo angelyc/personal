@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adapter.knowledge;
+package com.mario.designPatterns.adaptive.adapter.knowledge;
 
 public class Banner {
     private String string;

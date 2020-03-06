@@ -1,4 +1,4 @@
-package com.mario.designPatterns.iterator;
+package com.mario.designPatterns.adaptive.iterator;
 
 public class BookSelfIterator<T> implements MyIterator<T> {
     private BookShelf<T> bookShelf;

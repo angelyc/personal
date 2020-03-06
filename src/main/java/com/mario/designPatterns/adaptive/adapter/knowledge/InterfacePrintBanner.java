@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adapter.knowledge;
+package com.mario.designPatterns.adaptive.adapter.knowledge;
 
 /** 使用继承方式实现的适配器 */
 public class InterfacePrintBanner extends Banner implements InterfacePrint {

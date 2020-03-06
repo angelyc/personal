@@ -1,4 +1,4 @@
-package com.mario.designPatterns.iterator;
+package com.mario.designPatterns.adaptive.iterator;
 
 public class Main {
     public static void main(String[] args) {
