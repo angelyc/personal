@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adaptive.adapter;
+package com.mario.designPatterns.adapter.knowledge;
 
 /** 使用委托方式实现适配器 */
 public class ClassPrintBanner extends ClassPrint {

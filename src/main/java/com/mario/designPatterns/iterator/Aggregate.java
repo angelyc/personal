@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adaptive.iterator;
+package com.mario.designPatterns.iterator;
 
 
 public interface Aggregate<T> {

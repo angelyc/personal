@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adaptive.adapter;
+package com.mario.designPatterns.adapter.knowledge;
 
 public interface InterfacePrint {
     void printWeak();

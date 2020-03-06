@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adaptive.adapter;
+package com.mario.designPatterns.adapter.knowledge;
 
 public class Adapter {
     /** 适配器，位于实际情况与需求之间，填补两者之间的差异

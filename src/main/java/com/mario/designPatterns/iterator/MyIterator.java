@@ -1,4 +1,4 @@
-package com.mario.designPatterns.adaptive.iterator;
+package com.mario.designPatterns.iterator;
 
 /** 定义接口MyIterator
  *  以区分java提供java.util.Iterator接口*/
