@@ -7,13 +7,13 @@ public class StringDisplay extends AbstractDisplay{
         this.str = str;
         width = str.length();
     }
-    public void open() {
+    protected void open() {
         printLine();
     }
-    public void print() {
+    protected void print() {
         System.out.println("|" + str + "|");
     }
-    public void close(){
+    protected void close(){
         printLine();
     }
     private void printLine() {
