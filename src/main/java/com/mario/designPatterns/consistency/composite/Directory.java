@@ -12,6 +12,7 @@ public class Directory extends Entry {
     public String getName() {
         return name;
     }
+
     public int getSize() {
         int size = 0;
         Iterator it  = directory.iterator();
@@ -23,6 +24,7 @@ public class Directory extends Entry {
     }
     public Entry add(Entry entry) {
         directory.add(entry);
+        entry.parent = this;
         return this;
     }
     protected void printList(String prefix) {

@@ -1,8 +1,16 @@
 package com.mario.designPatterns.consistency.composite;
 
 public abstract class Entry {
+    protected Entry parent;
     public abstract String getName();
     public abstract int getSize();
+    public String getFullPath() {
+        if (null == parent) {
+            return "/" + getName();
+        } else {
+            return parent.getFullPath() + "/" + getName();
+        }
+    }
     public Entry add(Entry entry) throws FileTreatmentException {
         throw new FileTreatmentException();
     }

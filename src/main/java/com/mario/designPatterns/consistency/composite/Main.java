@@ -24,11 +24,15 @@ public class Main {
             usrDir.add(hanako);
             usrDir.add(tomura);
             yuki.add(new File("diary.html", 100));
-            yuki.add(new File("Composite.java", 200));
+            File file = new File("Composite.java", 200);
+            yuki.add(file);
             hanako.add(new File("meno.txt", 300));
             tomura.add(new File("game.doc", 400));
             tomura.add(new File("junk.mail", 500));
             rootDir.printList();
+
+            System.out.println("File = " + file.getFullPath());
+            System.out.println("hanako = " + hanako.getFullPath());
         } catch (FileTreatmentException e) {
             e.printStackTrace();
         }
