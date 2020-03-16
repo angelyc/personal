@@ -12,12 +12,12 @@ public class Main {
         Display d4 =
                 new SideBorder(
                         new FullBorder(
-                                new FullBorder(
+                                new UpDownBorder(
                                         new SideBorder(
-                                                new FullBorder(
-                                                        new StringDisplay("你好，设计模式")
+                                                new UpDownBorder(
+                                                        new StringDisplay("Hello design pattern"), '='
                                                 ), '*'
-                                        )
+                                        ), '&'
                                 )
                         ), '/'
         );
