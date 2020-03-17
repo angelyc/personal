@@ -35,7 +35,7 @@ public class Generic<E> {
      *  }*/
 
     /** 使用方法自定义的泛型和类定义的泛型 */
-    public <K> boolean isEequal(K k, E e) {
+    public <K> boolean isEqual(K k, E e) {
         /** 创建在放方法上的泛型是在真正调用方法时确定，一般都由传入的参数确定，
          * 包含这个方法的类创建对象时，并不会确定方法上的类型，一定在调用方法时确定。
          * */
