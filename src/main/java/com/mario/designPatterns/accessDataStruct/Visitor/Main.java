@@ -1,5 +1,7 @@
 package com.mario.designPatterns.accessDataStruct.Visitor;
 
+import java.util.Iterator;
+
 public class Main {
     public static void main(String[] args) {
         try {
@@ -27,9 +29,19 @@ public class Main {
             File file = new File("Composite.java", 200);
             yuki.add(file);
             hanako.add(new File("meno.txt", 300));
+            hanako.add(new File("index.html", 350));
             tomura.add(new File("game.doc", 400));
             tomura.add(new File("junk.mail", 500));
             rootDir.accept(new ListVisitor());
+
+            FileFindVisitor ffv = new FileFindVisitor(".html");
+            rootDir.accept(ffv);
+            System.out.println("HTML files are: ");
+            Iterator iterator = ffv.getFoundFiles();
+            while (iterator.hasNext()) {
+                File file2 = (File)iterator.next();
+                System.out.println(file2.toString());
+            }
         } catch (FileTreatmentException e) {
             e.printStackTrace();
         }
