@@ -1,13 +1,11 @@
 package com.mario.designPatterns.simplify.facade;
 
-import com.mario.designPatterns.dividually.strategy.WinnerStrategy;
-
 import java.io.IOException;
 import java.io.Writer;
 
-public class HtmlWriter {
+class HtmlWriter {
     private Writer writer;
-    public HtmlWriter(Writer writer){
+    HtmlWriter(Writer writer){
         this.writer = writer;
     }
     public void title(String title) throws IOException {
@@ -18,16 +16,16 @@ public class HtmlWriter {
         writer.write("<body>\n");
         writer.write("<h1>" + title + "</h1>\n");
     }
-    public void paragraph(String msg) throws IOException {
+    void paragraph(String msg) throws IOException {
         writer.write("<p>" + msg + "</p>");
     }
-    public void link(String href, String caption) throws IOException {
-        paragraph("<a href\"" + href + "\">" + caption + "</a>");
+    void link(String href, String caption) throws IOException {
+        paragraph("<a href=\"" + href + "\">" + caption + "</a>");
     }
-    public void mailto(String mailaddr, String username) throws IOException {
+    void mailto(String mailaddr, String username) throws IOException {
         link("mailto:" + mailaddr, username);
     }
-    public void close() throws IOException {
+    void close() throws IOException {
         writer.write("</body>");
         writer.write("</html>\n");
         writer.close();

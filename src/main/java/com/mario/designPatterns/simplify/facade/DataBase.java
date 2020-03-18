@@ -4,9 +4,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class DataBase {
+class DataBase {
     private DataBase() {}
-    public static Properties getProperties(String dbName) {
+    static Properties getProperties(String dbName) {
         String fileName = dbName + ".txt";
         Properties properties = new Properties();
         try {
