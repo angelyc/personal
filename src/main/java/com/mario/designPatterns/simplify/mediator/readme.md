@@ -14,3 +14,6 @@ Colleague角色负责定义与Mediator角色进行通信的接口（API）
 
 ConcreteColleague 角色负责实现Colleague角色的接口（API）
 
+# 特点
+
+ConcreteColleague可以服用，而ConcreteColleague不能服用
