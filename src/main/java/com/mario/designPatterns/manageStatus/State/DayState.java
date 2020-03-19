@@ -9,6 +9,8 @@ public class DayState implements State {
     public void doClock(Context context, int hour) {
         if (hour < 9 || hour >= 17 ) {
             context.changeState(NightState.getInstance());
+        } else if (hour >=12 && hour < 13) {
+            context.changeState(MiddleState.getInstance());
         }
     }
     public void doUse(Context context){
