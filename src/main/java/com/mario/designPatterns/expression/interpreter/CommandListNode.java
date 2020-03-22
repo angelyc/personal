@@ -1,4 +1,4 @@
-package com.mario.designPatterns.expression.interprete;
+package com.mario.designPatterns.expression.interpreter;
 
 import java.util.ArrayList;
 

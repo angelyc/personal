@@ -1,4 +1,4 @@
-package com.mario.designPatterns.expression.interprete;
+package com.mario.designPatterns.expression.interpreter;
 
 public class CommandNode extends Node {
     private Node node;
